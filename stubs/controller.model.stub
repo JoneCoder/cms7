@@ -1,0 +1,79 @@
+<?php
+/**
+ * @JoneCoder
+ */
+
+namespace {{ namespace }}\Backend;
+
+use {{ namespacedModel }};
+use App\Http\Requests\{{ model }}\{{ model }}Request;
+use {{ rootNamespace }}Http\Controllers\Controller;
+use App\Http\Resources\Resource;
+use Illuminate\Http\Request;
+
+class {{ class }} extends Controller
+{
+    //get paginate data
+    public function index(Request $request)
+    {   
+        if ($request->format() == 'html') {
+            return view('layouts.backend_app');
+        }
+        $data = {{ model }}::getPaginateData($request);
+
+        return new Resource($data);
+    }
+
+
+    public function create()
+    {
+        return view('layouts.backend_app');
+    }
+
+    //First validation than Store form data
+    public function store({{ model }}Request $request)
+    {
+        $res = {{ model }}::store($request);
+        if($res){
+            return response()->json(['status' => 200, 'message' => 'Create Successfully!'],200);
+        }else{
+            return response()->json(['status' => 500, 'message' => 'Sorry! Something went wrong.'],500);
+        }
+    }
+
+    //Show editable data
+    public function show(Request $request, {{ model }} ${{ modelVariable }})
+    {
+        if ($request->format() == 'html') {
+            return view('layouts.backend_app');
+        }
+        return ${{ modelVariable }};
+    }
+
+
+    public function edit({{ model }} ${{ modelVariable }})
+    {
+        return view('layouts.backend_app');
+    }
+
+    //First validation than Update form data
+    public function update({{ model }}Request $request, {{ model }} ${{ modelVariable }})
+    {
+        $res = ${{ modelVariable }}->update($request->all());
+        if($res){
+            return response()->json(['status' => 200, 'message' => 'Create Successfully!'],200);
+        }else{
+            return response()->json(['status' => 500, 'message' => 'Sorry! Something went wrong.'],500);
+        }
+    }
+
+    //Soft delete
+    public function destroy({{ model }} ${{ modelVariable }})
+    {
+        if(${{ modelVariable }}->delete()){
+            return response()->json(['status' => 200, 'message' => 'Delete Successfully!'],200);
+        }else{
+            return response()->json(['status' => 500, 'message' => 'Delete Unsuccessfully!'],500);
+        }
+    }
+}

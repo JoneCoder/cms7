@@ -1,0 +1,27 @@
+
+@media(max-width:767px){
+
+}
+
+@media(min-width:240px) and (max-width:480px){
+    .collapse{
+        display: block;
+        flex-basis: 85%!important;
+    }
+    .navbar{
+        height: auto!important;
+        padding:0rem!important;
+    }
+    .navbar-nav{
+        float: right;
+    }
+    .messages-menu,.notifications-menu,.tasks-menu{
+        display: none;
+    }
+    .user-menu{
+        margin-right: 10px;
+    }
+    .hidden-xs{
+        display: none;
+    }
+}

@@ -1,0 +1,36 @@
+<?php
+/**
+ * @JoneCoder
+ */
+
+namespace {{ namespace }};
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class {{ class }} extends FormRequest
+{
+    //Form Request Authorization
+    public function authorize()
+    {
+        return true;
+    }
+
+    //Validation Rules
+    public function rules()
+    {
+        return [
+            //ex: 'name'    => 'required|email|nullable|date|string|min:0|max:191|regex:/^[a-zA-Z. ():]+$/',
+            //ex: 'image'   => 'required|nullable|file|mimes:jpg,png,jpeg|min:1000|max:2000',
+            //ex: 'gender'  => 'required|in:1,2,3',
+            //ex: 'mobile'  => 'required|min:11|max:11',
+        ];
+    }
+
+    //Custom Validation Messages
+    public function messages()
+    {
+        return [
+            //ex: 'name.required' => 'Name is required.',
+        ];
+    }
+}

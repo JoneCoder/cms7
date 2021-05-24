@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @JoneCoder
+ */
+
+namespace {{ namespace }};
+
+use Auth;
+use Illuminate\Database\Eloquent\Model;
+use Spatie\Activitylog\Traits\LogsActivity;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class {{ class }} extends Model
+{
+    use LogsActivity, SoftDeletes;
+    protected $guarded = [];
+
+    //Get paginate Data
+    public static function getPaginateData($request)
+    {
+        $query = {{ class }}::latest();
+
+        if(!empty($request->field_name) && !empty($request->value)){
+            $query->where($request->field_name,'like','%'.$request->value.'%');
+        }
+
+        $data  = $query->paginate($request->pagination);
+
+        return $data;
+    }
+
+    //Store form data
+    public static function store($request)
+    {
+        $res = {{ class }}::create($request->all());
+        if($res){
+            return $res;
+        }else{
+            return false;
+        }
+    }
+
+
+
+
+
+    //--------------------------------------------------------
+    // LOG ACTIVITY
+    //--------------------------------------------------------
+    protected static $logAttributes = ['*'];
+    protected static $logName = '{{ class }}';
+    public function getDescriptionForEvent(string $eventName): string
+    {
+        $name = Auth::guard('admin')->user()->name;
+        return "{$name} have {$eventName} the {{ class }}";
+    }
+}

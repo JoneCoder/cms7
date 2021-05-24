@@ -1,0 +1,165 @@
+
+.table th, .table td {
+    padding: 0.30rem!important;
+    font-size: 13px;
+}
+.table th {
+    font-weight: 500;
+}
+.table th.sl {
+    width: 2%;
+    text-align: center;
+}
+.table th.action {
+    width: 10%;
+    text-align: center;
+}
+.table th.action-extra {
+    width: 14%;
+    text-align: center;
+}
+.table td.action {
+    width: 10%;
+    text-align: center;
+}
+.table td.action-extra {
+    width: 10%;
+    text-align: center;
+}
+.action-view {
+    margin-right: -2px;
+}
+.action-trash {
+    margin-left: -3px;
+    margin-right: -2px;
+}
+.action-custom {
+    margin-right: 2px;
+}
+.top-button {
+    margin-left: 3px;
+}
+.menu-tags{    
+    border: 1px solid #d2bfbf;
+    box-shadow: 1px 3px 8px #ccc;
+    padding: 3px 15px 0px 15px;
+    background: #fff;
+    border-bottom: 1px solid #d8dce5;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.12), 0 0 3px 0 rgba(0,0,0,0.04);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.12), 0 0 3px 0 rgba(0,0,0,0.04);
+}
+.menu-tags ul{    
+    margin-bottom: .40rem;
+    padding-left: 0px;
+}
+.menu-tags .tags li{
+    display: inline;
+    margin-right:5px;
+    padding: 0px 10px 4px 10px;
+    background: #fff;
+    border: 1px solid #d8dce5;
+}
+.menu-tags>.tags>li.active:before{
+    content: '●';
+    color: #fff;
+    font-size: 16px;
+}
+.menu-tags .tags li a{
+    color: #495060!important;
+    text-decoration: none;
+    font-size: 13px;
+}
+.menu-tags .tags li a i{    
+    color: #ddd;
+}
+.menu-tags .tags li a i:hover{
+    color: #da0e63;
+}
+.menu-tags .tags li.active{
+    background-color: #42b983;
+    border-color: #42b983;
+}
+.menu-tags .tags li.active a{
+    color: #fff!important;  
+}
+.no-data{
+   background: #ff2a6529;
+}
+.sort-th{
+    cursor:pointer;
+}
+.sort{
+    font-size: 10px;
+    margin-top: 4px;
+    color: #ddd;
+}
+.epp-content {
+    min-height: 27px!important;
+    margin-top: -7px;
+}
+.epp-content .box-tools{
+    top: 0px!important;
+    right: 0px;
+}
+.paginate{
+    width: 8%!important;
+    padding: 0rem!important;
+    line-height: 0rem!important;
+    height: 25px!important;
+}
+.epp-content .box-tools .btn{
+    border: 2px solid #42b983!important;
+    background: #1daf6d4a;
+    font-weight: 500;
+}
+
+.epp-content .box-tools .btn:hover{
+    background: #42b983;
+    color:#fff;
+    transition: .5s;
+}
+.choose-file-size{
+    height: 30px;
+    width: 35px;
+}
+.custom-file-label{
+    font-size: 12px;
+    height: 31px!important;
+}
+.custom-file-label::after {
+    height: 31px!important;
+}
+
+.b-calendar-inner{
+    width:345px!important;
+}
+.b-calendar-header{
+    display: none;
+}
+.b-calendar-nav{
+    margin-left: 28%;
+}
+
+#datepicker-sm__outer_{
+    height: 31px!important;
+    border: 0px!important;
+    border-radius: 0!important;
+}
+#datepicker-sm__value_{
+    height: 31px;
+}
+#datepicker-sm__dialog_{
+    width:345px!important;
+    margin-top: 30px;
+    transform:translate3d(0px, 0px, 0px)!important;
+}    
+
+.b-form-datepicker,.b-form-timepicker{
+    height: 31px!important;
+    border: 0px!important;
+    border-radius: 0!important;
+}
+.b-form-datepicker,.b-form-timepicker label{
+    height: 31px;
+}
+
