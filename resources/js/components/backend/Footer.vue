@@ -1,9 +1,9 @@
 <template>
   <footer class="main-footer">
-    <div class="pull-right hidden-xs"><b>Developed by:</b> OSHIT SUTRA DAR</div>
+    <div class="pull-right hidden-xs"><b>Developed by:</b> MD. SHARIFUL ISLAM</div>
     <strong>
       Copyright &copy; 2020
-      <a href="#">OSHIT-SD</a>.
+      <a href="#">JoneCoder</a>.
     </strong>
     All rights reserved.
   </footer>

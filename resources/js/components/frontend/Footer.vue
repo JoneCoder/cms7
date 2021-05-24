@@ -2,7 +2,7 @@
   <div>
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright © 2021 Oshit Sutradar</small>
+        <small>Copyright © 2021 JoneCoder</small>
       </div>
     </div>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
