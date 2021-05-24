@@ -1,6 +1,6 @@
 #Laravel-7 & Vue-2 CMS
 >First clone this repository for command:<br/>
-<code>$ git clone https://github.com/JoneCoder/cms.git</code><br/>
+<code>$ git clone https://github.com/JoneCoder/cms7.git</code><br/>
 
 >Second change the directory this command:<br/>
 <code>$ cd cms/</code><br/>
