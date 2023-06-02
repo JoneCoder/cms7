@@ -9,7 +9,7 @@
         alt
       />
       <!-- Masthead Heading-->
-      <h1 class="masthead-heading text-uppercase mb-0">Oshit Sutradar</h1>
+      <h1 class="masthead-heading text-uppercase mb-0">JoneCoder</h1>
       <!-- Icon Divider-->
       <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>

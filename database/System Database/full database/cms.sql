@@ -50,10 +50,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `name`, `username`, `email`, `password`, `mobile`, `address`, `profile`, `role_id`, `block`, `status`, `remember_token`, `created_at`, `updated_at`) VALUES
-(2, 'Oshit Sutra Dar', 'oshitsd', 'oshitsd@gmail.com', '$2y$10$.gIg9c9y8RXE5A3a2jUgG.1vUZl3wzx2OWPtVqAFZaj2iUz2JU9mC', '01883847733', 'Dhaka', 'upload/profile/a307KCxL9miK9GecRH9cfcHsHG19pULE0v8bujWZ.jpeg', 1, 0, 'a', NULL, '2020-05-20 06:06:40', '2020-06-08 06:33:48'),
-(3, 'Bappy Sutra Dar', 'oshitsd', 'oshit@gmail.com', '$2y$10$ChwGECbUeecaazxerIND7eCx809GbERydweF2kaZ/URgdOARP4eKy', '01883847733', 'Feni,Bd', '', 2, 0, 'a', NULL, '2020-05-20 06:06:40', '2020-06-09 04:49:54'),
-(4, 'Oshitsd', NULL, 'oshitsd99@gmail.com', '$2y$10$mBlg8uM9vSDfhtppcJFNsuNsk6q6OZdDRS8cJ8H8lUYZQy5PhsIky', '01862534183', 'Dhaka', '', 2, 0, 'a', NULL, '2020-05-27 04:54:12', '2020-06-09 04:50:03'),
-(6, 'Admin', NULL, 'admin@gmail.com', '$2y$10$TJhmV1U2n.ap.A5lki6Peu4eD9CBQ.rPfFz9aTz/lYclVpCBB/2Ru', '01883847733', 'Dhaka', NULL, 2, 0, 'a', NULL, '2020-06-09 22:15:45', '2020-06-11 20:54:00');
+(1, 'Md. Shariful Islam', 'JoneCoder', 'jonecoder@gmail.com', '$2y$10$.gIg9c9y8RXE5A3a2jUgG.1vUZl3wzx2OWPtVqAFZaj2iUz2JU9mC', '01883847733', 'Dhaka', 'upload/profile/a307KCxL9miK9GecRH9cfcHsHG19pULE0v8bujWZ.jpeg', 1, 0, 'a', NULL, '2020-05-20 06:06:40', '2020-06-08 06:33:48');
 
 -- --------------------------------------------------------
 
